@@ -1,6 +1,17 @@
 <?php
     class ScrabbleScore
     {
+        private $userInput;
+
+        function __construct($wordInput)
+        {
+            $this->userInput = $wordInput;
+        }
+
+        function getUserInput()
+        {
+            return $this->userInput;
+        }
 
         function calculateScore($wordInput)
         {

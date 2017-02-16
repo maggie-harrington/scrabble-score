@@ -7,7 +7,7 @@ class ScrabbleScoreTest extends PHPUnit_Framework_TestCase
     {
         // Arrange
         $testWord = 'A';
-        $test_scrabble = new ScrabbleScore();
+        $test_scrabble = new ScrabbleScore($testWord);
 
         // Act
         $result = $test_scrabble->calculateScore($testWord);
@@ -20,7 +20,7 @@ class ScrabbleScoreTest extends PHPUnit_Framework_TestCase
     {
         // Arrange
         $testWord = 'a';
-        $test_scrabble = new ScrabbleScore();
+        $test_scrabble = new ScrabbleScore($testWord);
 
         // Act
         $result = $test_scrabble->calculateScore($testWord);
@@ -32,8 +32,8 @@ class ScrabbleScoreTest extends PHPUnit_Framework_TestCase
     function test3_check_ScrabbleScore()
     {
         // Arrange
-        $test_scrabble = new ScrabbleScore();
         $testWord = 'd';
+        $test_scrabble = new ScrabbleScore($testWord);
 
         // Act
         $result = $test_scrabble->calculateScore($testWord);
@@ -46,7 +46,7 @@ class ScrabbleScoreTest extends PHPUnit_Framework_TestCase
     {
         // Arrange
         $testWord = 'at';
-        $test_scrabble = new ScrabbleScore();
+        $test_scrabble = new ScrabbleScore($testWord);
 
         // Act
         $result = $test_scrabble->calculateScore($testWord);
@@ -59,7 +59,7 @@ class ScrabbleScoreTest extends PHPUnit_Framework_TestCase
     {
         // Arrange
         $testWord = 'echo';
-        $test_scrabble = new ScrabbleScore();
+        $test_scrabble = new ScrabbleScore($testWord);
 
         // Act
         $result = $test_scrabble->calculateScore($testWord);
