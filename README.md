@@ -29,9 +29,11 @@ _Written using Git Bash, Atom, Composer, Silex, Twig, PHPUnit, and Bootstrap._
 Copyright (c) 2017 Maggie Harrington
 
 ## Specifications
-| Behavior - What does calculateScore() return?    | Input    | Output       |
-|--------------------------------------------------|----------|--------------|
-| Single letter                                               | a        | 1 |
-| Single letter assigned to a different score than first case | d        | 2 |
-| Word with letters assigned to same score                    | at       | 2 |
-| Word with letters assigned to different scores              | echo     | 9 |
+
+| Test cases for calculateScore()                                | Input    | Output  |
+|----------------------------------------------------------------|----------|---------|
+| 1: Single letter entered in upper case                         | A        | 1       |
+| 2: Single letter entered in lower case                         | a        | 1       |
+| 3: Single letter assigned to a different score than first case | d        | 2       |
+| 4: Word with letters assigned to same score                    | at       | 2       |
+| 5: Word with letters assigned to different scores              | echo     | 9       |
