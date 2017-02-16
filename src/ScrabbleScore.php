@@ -1,10 +1,11 @@
 <?php
     class ScrabbleScore
     {
-        function calculateScore($userInput)
+
+        function calculateScore($wordInput)
         {
-            $scoreMap = array('A'=>'1');
-            $wordScore = $scoreMap;
+            $scoreMap = array('1'=>'A');
+            $wordScore = array_search($wordInput, $scoreMap);
             return $wordScore;
         }
     }
