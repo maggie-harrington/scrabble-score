@@ -15,7 +15,12 @@
 
         function calculateScore($wordInput)
         {
-            $scoreMap = array('1'=>'A');
+            $wordInput = strtoupper($wordInput);
+
+            $scoreMap = array('A'=>'1');
+            $scoreMap = array_flip($scoreMap);
+
+
             $wordScore = array_search($wordInput, $scoreMap);
             return $wordScore;
         }
