@@ -6,27 +6,27 @@ class ScrabbleScoreTest extends PHPUnit_Framework_TestCase
     function test1_check_ScrabbleScore()
     {
         // Arrange
-        $testWord = 'A';
+        $testWord = 'K';
         $test_scrabble = new ScrabbleScore($testWord);
 
         // Act
         $result = $test_scrabble->calculateScore($testWord);
 
         // Assert
-        $this->assertEquals('1', $result);
+        $this->assertEquals('5', $result);
     }
 
     function test2_check_ScrabbleScore()
     {
         // Arrange
-        $testWord = 'a';
+        $testWord = 'k';
         $test_scrabble = new ScrabbleScore($testWord);
 
         // Act
         $result = $test_scrabble->calculateScore($testWord);
 
         // Assert
-        $this->assertEquals('1', $result);
+        $this->assertEquals('5', $result);
     }
 
     function test3_check_ScrabbleScore()
